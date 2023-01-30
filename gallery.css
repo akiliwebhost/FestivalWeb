@@ -1,10 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+body{
+    background: #222;
+    
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery a{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+
+.gallery a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery a img:hover{
+    transform: scale(1.4);
+}
+
+h1{
+    font-size: 50px;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
 * {
     box-sizing: border-box;
   }
   
   body {
     margin: 0;
-    background: #000;
   }
   
   /* Hidden Items */
@@ -25,7 +72,6 @@
     padding: 32px;
     color: #fff;
     z-index: 2;
-    background: #000;
     transition: all 400ms ease;
   
     position: relative;
