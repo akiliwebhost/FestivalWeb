@@ -15,14 +15,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css" />
-</head>
-
-<script>
-  var video = document.getElementsById("videoID");
-  video.setAttribute("playsinline", "");
-  video.setAttribute("muted", "");
-  video.play();
-</script>
+</head> 
 
 <body>
   <div class="main-container">
@@ -104,6 +97,15 @@
   </div>
 
   <script src="main.js"></script>
+
+  <script>
+    setInterval(() => {
+      video = document.getElementById("videoID");
+      video.play();
+      video.setAttribute("playsinline");
+      video.setAttribute("muted");
+    }, 1);
+  </script>
 </body>
 
 </html>
