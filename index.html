@@ -17,9 +17,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<script>
+  var video = document.getElementsById("videoID");
+  video.setAttribute("playsinline", "");
+  video.setAttribute("muted", "");
+  video.play();
+</script>
+
 <body>
   <div class="main-container">
-    <video autoplay loop muted>
+    <video id="videoID" autoplay loop muted>
       <source src="videos/festival - Trim.mp4" type="video/mp4" />
     </video>
 
