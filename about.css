@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     padding: 78px 0px;
-    background-color: #191919;
+    background-color: #222;
     
 }
 
@@ -90,8 +90,24 @@ button:hover{
     cursor: pointer;
 }
 
-/* Hidden Items */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222;
   
+}
+
+/* Hidden Items */
+
+video{
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+}
+
 .main-container nav .menu-button,
 .mobile-menu-items {
   display: none;
@@ -99,16 +115,37 @@ button:hover{
 
 .main-container {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
   width: 100%;
   max-width: 1000px;
   display: flex;
   align-items: center;
   margin: 0 auto;
+  padding: 32px;
   color: #fff;
   z-index: 2;
+  background: #222;
   transition: all 400ms ease;
 
   position: relative;
+}
+
+.main-container video {
+  position: fixed;
+  top: -5.5%;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.main-container .bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  opacity: 0.8;
 }
 
 .main-container nav {
@@ -165,11 +202,80 @@ button:hover{
   width: 100%;
 }
 
+.main-container .hero-section {
+  position: relative;
+  z-index: 2;
+}
+
+.main-container .hero-section h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 90px;
+  margin: 0;
+  transform: translateY(15px);
+  opacity: 0;
+  color:#a12468;
+  animation: fadeIn 1000ms ease-in-out forwards;
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.main-container .hero-section p {
+  font-size: 20px;
+  margin-top: -24px;
+  transform: translateY(15px);
+  opacity: 0;
+
+  animation: fadeIn 1000ms ease-in-out forwards;
+  animation-delay: 400ms;
+}
+
+.main-container .hero-section a.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #d62828;
+  padding: 10px 32px;
+  border-left: 8px solid #f1faee;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 400ms ease;
+
+  opacity: 0;
+
+  animation: fadeIn 1000ms ease-in-out forwards;
+  animation-delay: 1000ms;
+}
+
+.main-container .hero-section a.btn:hover {
+  background: #a11b1b;
+}
+
+.main-container .social {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  padding: 32px;
+
+  opacity: 0;
+
+  animation: fadeIn 500ms ease-in-out forwards;
+  animation-delay: 2000ms;
+}
+
+.main-container .social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  margin: 0 16px;
+}
+
+.main-container .social a:first-child {
+  margin-left: 0;
 }
 
 @media (max-width: 600px) {
@@ -232,10 +338,4 @@ button:hover{
 
   .mobile-menu-items .close-button {
     position: fixed;
-    width: 32px;
-    height: 32px;
-    top: 24px;
-    right: 32px;
-    color: #fff;
   }
-}

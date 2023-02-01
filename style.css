@@ -5,10 +5,22 @@
   body {
     margin: 0;
     background: #000;
+    margin: 0;
   }
   
   /* Hidden Items */
-  
+
+  video{
+    width: 100%;
+    height: 300vh;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 900px) {
+    video {
+      height: 100vh;
+    }
+  }
   .main-container nav .menu-button,
   .mobile-menu-items {
     display: none;
@@ -33,7 +45,7 @@
   
   .main-container video {
     position: fixed;
-    top: -9%;
+    top: -5.5%;
     left: 0;
     width: 100%;
     z-index: 0;

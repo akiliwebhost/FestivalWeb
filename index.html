@@ -15,13 +15,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css" />
-</head> 
+</head>
 
 <body>
   <div class="main-container">
-    <video id="videoID" autoplay loop muted>
-      <source src="videos/festival - Trim.mp4" type="video/mp4" />
-    </video>
+    <div class="videoID">
+      <video autoplay="" loop="" muted="" class="custom-video" poster="">
+        <source src="videos/festival - Trim.mp4" type="video/mp4">
+      </video>
+    </div>
 
     <div class="bg-overlay"></div>
 
@@ -97,15 +99,6 @@
   </div>
 
   <script src="main.js"></script>
-
-  <script>
-    setInterval(() => {
-      video = document.getElementById("videoID");
-      video.play();
-      video.setAttribute("playsinline");
-      video.setAttribute("muted");
-    }, 1);
-  </script>
 </body>
 
 </html>
