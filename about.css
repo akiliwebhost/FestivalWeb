@@ -8,7 +8,7 @@
 }
 
 .about {
-  width: 100%;
+  width: 150%;
   height: 100vh;
   padding: 78px 0px;
   background-color: #222;
@@ -17,12 +17,12 @@
 
 .about img {
   height: auto;
-  width: 420px;
-  border-radius: 25%;
+  width: 250px;
+  border-radius: 20%;
 }
 
 .about-text {
-  width: 550px;
+  width: 200px;
 }
 
 .about-text p {
@@ -128,14 +128,6 @@ video {
   transition: all 400ms ease;
 
   position: relative;
-}
-
-.main-container video {
-  position: fixed;
-  top: -5.5%;
-  left: 0;
-  width: 100%;
-  z-index: 0;
 }
 
 .main-container .bg-overlay {

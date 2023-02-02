@@ -5,14 +5,6 @@
     transition: all .2s linear;
 }
 
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-
-}
-
 body{
     background: #222;
     
@@ -164,7 +156,7 @@ body {
   margin: 0;
   transform: translateY(15px);
   opacity: 0;
-  color:#a12468;
+  color:#24981a;
   animation: fadeIn 1000ms ease-in-out forwards;
 }
 
