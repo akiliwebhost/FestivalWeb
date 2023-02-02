@@ -11,13 +11,15 @@
   /* Hidden Items */
 
   video{
-    width: 100%;
-    height: 300vh;
+    position: absolute;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
   @media screen and (min-width: 900px) {
-    video {
+    .main-container{
       height: 100vh;
     }
   }
@@ -30,7 +32,6 @@
     font-family: "Roboto", sans-serif;
     height: 100vh;
     width: 100%;
-    max-width: 1000px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -45,7 +46,7 @@
   
   .main-container video {
     position: fixed;
-    top: -5.5%;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 0;
