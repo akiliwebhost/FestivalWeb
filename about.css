@@ -84,6 +84,19 @@
   .content-section .social {
     text-align: center;
   }
+  .content-section .content h3 {
+    margin-top: 20px;
+    color: #a1c338;
+    font-size: 25px;
+  
+  }
+  .content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f47c1b;
+  }
 }
 
 * {
