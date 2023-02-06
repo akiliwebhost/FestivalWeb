@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 * {
     box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
 }
 
 body {
@@ -17,7 +19,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,14 +31,17 @@ header{
     padding: 50px 100px;
     transition: 0.5s;
 }
-header.shadow{
+
+header.shadow {
     background: black;
     box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
-header.shadow .navbar a{
+
+header.shadow .navbar a {
     color: black;
 }
-header.shadow .logo{
+
+header.shadow .logo {
     color: black;
 }
 
@@ -122,6 +127,7 @@ video {
     list-style: none;
     padding: 0;
     margin: 0;
+
 }
 
 .main-container nav ul a {
@@ -130,6 +136,7 @@ video {
     font-size: 15px;
     text-transform: uppercase;
     position: relative;
+
 }
 
 .main-container nav ul a::after {

@@ -15,10 +15,15 @@
   display: block;
   margin: auto;
   padding-top: 100px;
+  text-align: center;
 }
 .content-section{
-  float: left;
-  width: 55%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .image-section{
   float: right;
@@ -32,32 +37,20 @@
 .content-section .title {
   text-transform: uppercase;
   font-size: 28px;
+  color: #e50a82;
 }
 .content-section .content h3 {
   margin-top: 20px;
-  color: #f47c1b;
-  font-size: 21px;
+  color: #a1c338;
+  font-size: 40px;
+
 }
 .content-section .content p{
   margin-top: 10px;
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 32px;
   line-height: 1.5;
-}
-.content-section .content .button{
-  margin-top: 30px;
-}
-.content-section .content .button a {
-  background-color: #3d3d3d;
-  padding: 12px 40px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 25px;
-  letter-spacing: 1.5px;
-}
-.content-section .content .button a:hover{
-  background-color: #a1c338;
-  color: #fff;
+  color: #f47c1b;
 }
 .content-section .social {
   margin-top: 40px;
@@ -68,7 +61,7 @@
   padding: 0px 10px;
 }
 .content-section .social i:hover{
-  color: #f47c1b;
+  color: #3fad31;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,12 +80,6 @@
   .content-section .title {
     text-align: center;
     font-size: 19px;
-  }
-  .content-section.content .button{
-    text-align: center;
-  }
-  .content-section .content .butotn a {
-    padding: 9px 30px;
   }
   .content-section .social {
     text-align: center;
@@ -163,11 +150,9 @@ video {
 }
 
 .main-container {
-  height: 100%;
   width: 100%;
   align-items: center;
   margin: 0 auto;
-  padding: 92px;
   color: #fff;
   z-index: 2;
   background: #222;
@@ -223,6 +208,7 @@ video {
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 
 .main-container nav ul a {
