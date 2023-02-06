@@ -270,3 +270,13 @@ video {
     color: #fff;
   }
 }
+@media (max-width: 355px) {
+  .main-container .hero-section h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 314px) {
+  .main-container .hero-section h1 {
+    font-size: 45px;
+  }
+}
