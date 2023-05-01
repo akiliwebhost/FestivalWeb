@@ -1,0 +1,13 @@
+.botn {
+    padding: 0.7rem 1.4rem;
+    background: #e50a82;
+    color: #a1c338;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+  }
+  
+  .botn:hover {
+    background: #f47c1b;
+  }

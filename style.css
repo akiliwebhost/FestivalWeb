@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -153,7 +154,7 @@ video {
   color: #f47c1b;
   animation: fadeIn 1000ms ease-in-out forwards;
   animation-delay: 400ms;
-  
+
 }
 
 .main-container .hero-section a.btn {
@@ -183,8 +184,8 @@ video {
   bottom: 32px;
   left: 0;
   padding: 30px;
-            text-align: center;
-            color: #e50a82;
+  text-align: center;
+  color: #e50a82;
   padding: 5px;
   opacity: 0;
   animation: fadeIn 500ms ease-in-out forwards;
@@ -270,11 +271,13 @@ video {
     color: #fff;
   }
 }
+
 @media (max-width: 355px) {
   .main-container .hero-section h1 {
     font-size: 50px;
   }
 }
+
 @media (max-width: 314px) {
   .main-container .hero-section h1 {
     font-size: 45px;
